@@ -1,0 +1,226 @@
+/* open-sans-300 - cyrillic_latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/open-sans-v36-cyrillic_latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-regular - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/open-sans-v36-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-500 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/open-sans-v36-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* open-sans-600 - cyrillic_latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/open-sans-v36-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+* {
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: lightpink;
+    padding: 1.25rem 0;
+    border-bottom: 5px solid  #0885c6;
+    font-size: 1.2rem;
+    position: sticky;
+    top:0;
+    
+}
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+}
+.header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-menu li {
+    display: inline;
+    margin-right: 5px;
+}
+.profile {
+    /* float: right; */
+    margin-left: auto;
+}
+.sidebar {
+    /* float: left; */
+    width: 15rem;
+    padding-top: 1rem;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+.sidebar fieldset {
+    border: none;
+}
+.sidebar legend {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.form-group{
+    font-size: 1rem;
+}
+.page-content {
+    padding: 1px;
+    padding: 1rem;
+}
+
+.btn {
+    color: white;   
+    background-color:  #0885c6;
+    border: none;
+    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.products-header{
+    text-shadow: rgb(8, 133, 198) 13px 6px 22px;
+    color: #0885c6;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.product-card {
+    display: flex;
+    height: 23rem;
+    width: 31rem;
+    background-color: lightpink;
+    /* border: 2px solid  #0885c6; */
+    border-radius: 5px;
+    color: white;
+    box-shadow: 30px 30px 100px rgb(231, 154, 165);
+}
+.product-image {
+    /* float: left; */
+    width: 65%;
+    height: 100%;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-details {
+    /* float: right; */
+    width: 70%;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.product-details header {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.product-info {
+    font-size: 18px;
+    text-align: justify;
+    height: 67%;
+    overflow: auto;
+}
+
+.buy-btn {
+    color: white;   
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    overflow: hidden;
+    cursor:pointer;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+.price {
+    background-color: lightgrey;
+    padding: 0.625rem 1.25rem;
+    display: inline-block;
+}
+.buy {
+    background-color: #0885c6;
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+}
+
+.footer {
+    background-color: lightpink;
+    padding: 1.25rem 0;
+    border-top: 5px solid  #0885c6;
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex-grow: 1;
+    margin-top: 50px;
+    /* position: absolute;
+    width: 100%;
+    bottom: 0; */
+    
+}
+.d-flex {
+    display: flex;
+}
+
+.sales {
+    border: 2px solid #0885c6;
+    height: 10rem;
+    width: 20rem;
+    box-shadow: 6px 6px 100px #0885c6;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.akccii {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 163.5px 0px;
+    justify-content: center;
+}   
+
+.page-content__text {
+    margin-bottom: 15px;
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-direction: column;
+}
